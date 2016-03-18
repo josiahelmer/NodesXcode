@@ -105,6 +105,34 @@ void CTECArray<Type> ::set(int position, const Type& value)
 				return current->setValue(value);
 			}
 		}
+    /*
+     1. Check that the array exists.
+     2. Point to head.
+     3.Loop overnodes until value is found
+     4. return index or -1 if no found
+     */
+    template <class Type>
+    int CTECArray<Type>::indexOf(Type seachValue)
+    {
+        assert(this->size > 0);
+        
+        ArrayNode<Type> * current = head;
+        int indexNotFound = -1;
+        
+        for(int index = 0; ndex < this->size; index++)
+        {
+            if(current->getValue() == searchValue)
+            {
+                retrun index;
+            }
+            else
+            {
+                curent = current->getValue();
+            }
+        }
+        
+        retr indexNotFound;
+    }
 
 }
 

@@ -168,6 +168,27 @@ void CTECList<Type> :: calculateSize()
 
 	}
 }
+template <class Type>
+int CTECList<Type> :: IndexOf(Type searchValue)
+{
+    assert(this->size >0);
+    
+    int index = 0;
+    
+    ArrayNode<Type> * searchPointer;
+    
+    for(searchPointer = head; searchPointer != nullptr; searchPointer = searchPointer->geNext
+        ())
+    {
+        if(searchValue == searchPointer->getValue())
+        {
+            return index;
+        }
+        index++;
+    }
+    index = -1;
+    return index;
+}
 
 template <class Type>
 void CTECList<Type>::addToFront(const Type& value)
@@ -220,3 +241,4 @@ Type CTECList<Type> :: getFromIndex(int index)
 
 
 }
+dsd

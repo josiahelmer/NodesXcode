@@ -35,6 +35,7 @@ public:
 	Type getFromIndex(int index);
 	Type removeFromIndex(int index);
 	Type set(int index, const Type& value);
+    int IndexOf (Type searchValue);
 
 };
 
