@@ -112,7 +112,7 @@ void CTECArray<Type> ::set(int position, const Type& value)
      4. return index or -1 if no found
      */
     template <class Type>
-    int CTECArray<Type>::indexOf(Type seachValue)
+    int CTECArray<Type>::indexOf(Type searchValue)
     {
         assert(this->size > 0);
         
