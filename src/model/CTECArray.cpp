@@ -8,10 +8,26 @@
 #include "CTECArray.h"
 
 #include <assert.h>
+#include"ArrayyNode.h"
 
 using namespace std;
 
 template <class Type>
+class CTECArray
+{
+private:
+    int size;
+    Arrayode<Type> # head;
+    void swap
+public:
+    CTECArray(int size);
+    virtual ~CTECArray();
+    int getSize();
+    void set (int poition, const Type& value);
+    Type get( int position);
+    int ndexOf(Type searchValue);
+    int nextIndexOf(int startingIndex, Type searchValue0);
+};
 CTECArray<Type>::CTECArray(int size)
 {
 	this->size = size;
@@ -111,7 +127,7 @@ void CTECArray<Type> ::set(int position, const Type& value)
      3.Loop overnodes until value is found
      4. return index or -1 if no found
      */
-    template <class Type>
+template <class Type>
     int CTECArray<Type>::indexOf(Type searchValue)
     {
         assert(this->size > 0);
@@ -132,6 +148,32 @@ void CTECArray<Type> ::set(int position, const Type& value)
         }
         
         retr indexNotFound;
+    }
+    template <clas Type>
+    void CTECList<Type> :: swap( int indexOne, int indexTwo)
+    {
+        assert(indexOnde < size && indexTwo < size);
+        
+        Type temp = getFromIndex(indexOne);
+        set( indexOne, getFromIndex(indexTwo));
+        set(indexTwo, temp);
+    }
+    
+    template <class Type>
+    void CTECLIst<Type> :: selectionSort()
+    {
+        for( int otLoop = 0; outerLoop < size - 1; outerLoop++)
+        {
+            int selectedMinimum = outerLoop;
+            
+            for(int innerLoop = outerLoop + 1; innerLoop < size; innderLoop++)
+            {
+                ifgetFromIndex(innerLoop) < getFromIndex(selectedMinimum))
+                {
+                    selectedMinimum = innerLoop;
+                }
+            }
+        }
     }
 
 }
