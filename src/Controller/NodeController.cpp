@@ -40,7 +40,7 @@ void NodeController :: start()
 	}
 
 	for(int index = notHipsterInts->getSize()-1; index >= 0; index--)
-	{
+	{ 
 		cout << "The contents of the notHipsterInts array node" << index << " are:" << notHipsterInts->get(index) << endl;
 	}
 
@@ -132,5 +132,16 @@ void NodeController :: start()
         {
             data[index] = temp[index];
         }
+    }
+    
+    void Nodecontroller::swap(int first, int last)
+    {
+        int temp  mergeData[first];
+        mergeData[first] = mergeData[last];
+        mergeData[last] = temp;
+    }
+    void NodeController::doQuick()
+    {
+        merData = new int[1000000000];
     }
 }

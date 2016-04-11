@@ -14,6 +14,7 @@
 		0325AFEE1C99DCB60009460F /* CTECList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0325AFE41C99DCB60009460F /* CTECList.cpp */; };
 		0325AFEF1C99DCB60009460F /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0325AFE61C99DCB60009460F /* Node.cpp */; };
 		0325AFF01C99DCB60009460F /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0325AFE81C99DCB60009460F /* Timer.cpp */; };
+		038266C31CBC1DB2009C2002 /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038266C11CBC1DB2009C2002 /* TreeNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		0325AFE71C99DCB60009460F /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		0325AFE81C99DCB60009460F /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		0325AFE91C99DCB60009460F /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		038266C11CBC1DB2009C2002 /* TreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeNode.cpp; sourceTree = "<group>"; };
+		038266C21CBC1DB2009C2002 /* TreeNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TreeNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				0325AFE71C99DCB60009460F /* Node.h */,
 				0325AFE81C99DCB60009460F /* Timer.cpp */,
 				0325AFE91C99DCB60009460F /* Timer.h */,
+				038266C11CBC1DB2009C2002 /* TreeNode.cpp */,
+				038266C21CBC1DB2009C2002 /* TreeNode.hpp */,
 			);
 			name = model;
 			path = src/model;
@@ -161,6 +166,7 @@
 				0325AFEB1C99DCB60009460F /* NodeRunner.cpp in Sources */,
 				0325AFEE1C99DCB60009460F /* CTECList.cpp in Sources */,
 				0325AFF01C99DCB60009460F /* Timer.cpp in Sources */,
+				038266C31CBC1DB2009C2002 /* TreeNode.cpp in Sources */,
 				0325AFEA1C99DCB60009460F /* NodeController.cpp in Sources */,
 				0325AFEC1C99DCB60009460F /* ArrayNode.cpp in Sources */,
 				0325AFEF1C99DCB60009460F /* Node.cpp in Sources */,
@@ -283,6 +289,7 @@
 				0325AFC31C99DBBD0009460F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
