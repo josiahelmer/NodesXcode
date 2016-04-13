@@ -13,7 +13,7 @@
 naespace CTECData
 {
     template <class Type>
-    class CtecBinaryTreePM
+    class BinaryTree
     {
     private:
         int size;
@@ -25,6 +25,13 @@ naespace CTECData
         CTECBinaryTree();
         ~CTECBinaryTree();
         bool insert(const Type&)
+        int getSize();
+        int getHeight();
+        bool isBalanced();
+        TreeNode<Type> * getRobot();
+        void preorderTraversal(TreeNode<Type> * currentNode);
+        void inorderTraversal(TreeNode<Type> * currentNode);
+        void postorderTraversal(TreeNode<Type> * currentNode);
     };
 }
 #endif /* BinaryTree_hpp */
