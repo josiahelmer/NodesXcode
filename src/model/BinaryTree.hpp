@@ -21,6 +21,8 @@ naespace CTECData
         int height;
         bol balanced;
         bool contains(Type value, CTECBinaryTree<Type>) * currentTree);
+        TreeNode<Type> * getRightMostChild(BinaryTree<Type> leftSubTree);
+        TreeNode<Type>* getLeftMostChild(BinartyTree<Type> rightSubTree);
     public:
         CTECBinaryTree();
         ~CTECBinaryTree();

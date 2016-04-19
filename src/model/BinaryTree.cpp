@@ -38,6 +38,12 @@ int BinaryTree<Type> :: getSize()
 }
 
 template <class Type>
+bool BinaryTree<Type> :: insert()
+{
+    
+}
+
+template <class Type>
 void BinaryTreeType> :: preorderTraversal(TreedNodePM<Type> * currentNode)
 {
     if(currentNode != nullptr)
