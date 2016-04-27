@@ -25,5 +25,11 @@ TreeNode<Type> :: TreeNode(const Type& value) : Node<Type>(value)
     this->parent = nullptr;
     
     this->setValue(value);
-}templat <class Type>
+}
+template <class Type>
 TreeNodePM<Type> :: TreeNod(constType& value, TreeNode<Type> * parent) : Node Type>(value)
+{
+    this->leftChild = nullptr;
+    this->rightChild = nullptr;
+    this->parent = parent;
+}

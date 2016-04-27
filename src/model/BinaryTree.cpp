@@ -92,3 +92,16 @@ bool BinaryTee<Type> :: contains(Type value, BinaryTree<Type> * currentTree)
     
     return isInTree;
 }
+
+template <class Type>
+               TreeNode<Type * BinaryTree<Type> :: getRightMostChil(BinaryTree<Type> leftSubTree)
+            {
+                TreeNode<Type> * leftNode = rightSubTree->getRoot();
+                while(leftNode-getLeftChild() != nullptr)
+                {
+                    leftNode = leftNode->gtLeftChild();
+                    
+                }
+                
+                return leftNode;
+            }

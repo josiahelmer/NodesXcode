@@ -22,16 +22,15 @@ namespace CTECData
         TreeNode<Type> * parent;
         
     public:
-        TreeNode();
-        TreeNode(const Type& value);
-        TreeNodeconst Type& value , TreeNode
-        void setLeftChild(treeNode<Type> * )leftChild);
-        void setRightChild(TreeNode<Type> * rightChild);
-        void setParent(TreenNodePm<Type> * parent);
-        TreeNode<Type> * getLeftChild();
-        TreeNode<Type> * getRightChild();
-        TreeNode<Type> * getParent
-        
+        TreeNodePM();
+        TreeNodePM(const Type& value);
+        TreeNodePM(const Type& value, TreeNodePM<Type> * parent);
+        void setLeftChild(TreeNodePM<Type> * leftChild);
+        void setRighttChild(TreeNodePM<Type> * rightChild);
+        void setParent(TreeNodePM<Type> * parent);
+        TreeNodePM<Type> * getLeftChild();
+        TreeNodePM<Type> * getRightChild();
+        TreeNodePM<Type> * getParent();
     };
 }
 
