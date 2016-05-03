@@ -8,3 +8,29 @@
 
 #include "Graph.hpp"
 
+using namespace CTECData;
+
+template <class Type>
+const int CTECGraph<Type> :: MAXIMUM;
+
+template <class Type>
+void Graph<Type> :: addVertex(const Type& value)
+{
+    asset(size() < MAXIMUM);
+    int newVertexNumber = manyVertices;
+    manyVertices++;
+    
+    for(int otherVertexNumber = 0; otherVertexNumber < manyVertices;
+        otherVertexNumber++)
+    {
+        adjacencyMatrix[otherVertexNumber] [newVertexNumber] = false;
+    }
+    
+}
+
+template <class Type>
+void Graph<Type> :: addEdge(int source, int )
+{
+    
+}
+
