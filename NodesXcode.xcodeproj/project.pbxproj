@@ -16,6 +16,8 @@
 		0325AFF01C99DCB60009460F /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0325AFE81C99DCB60009460F /* Timer.cpp */; };
 		038266C31CBC1DB2009C2002 /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038266C11CBC1DB2009C2002 /* TreeNode.cpp */; };
 		038266C61CBC2EE5009C2002 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038266C41CBC2EE5009C2002 /* BinaryTree.cpp */; };
+		03B897491CE106AA00A6A92C /* HashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03B897471CE106AA00A6A92C /* HashNode.cpp */; };
+		03BDACCC1CDBC553004836FF /* HashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BDACCA1CDBC553004836FF /* HashTable.cpp */; };
 		03C012781CD13B7200046A21 /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03C012761CD13B7200046A21 /* Graph.cpp */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,10 @@
 		038266C21CBC1DB2009C2002 /* TreeNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TreeNode.hpp; sourceTree = "<group>"; };
 		038266C41CBC2EE5009C2002 /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
 		038266C51CBC2EE5009C2002 /* BinaryTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
+		03B897471CE106AA00A6A92C /* HashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashNode.cpp; sourceTree = "<group>"; };
+		03B897481CE106AA00A6A92C /* HashNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
+		03BDACCA1CDBC553004836FF /* HashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashTable.cpp; sourceTree = "<group>"; };
+		03BDACCB1CDBC553004836FF /* HashTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HashTable.hpp; sourceTree = "<group>"; };
 		03C012761CD13B7200046A21 /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
 		03C012771CD13B7200046A21 /* Graph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +118,10 @@
 				038266C51CBC2EE5009C2002 /* BinaryTree.hpp */,
 				03C012761CD13B7200046A21 /* Graph.cpp */,
 				03C012771CD13B7200046A21 /* Graph.hpp */,
+				03BDACCA1CDBC553004836FF /* HashTable.cpp */,
+				03BDACCB1CDBC553004836FF /* HashTable.hpp */,
+				03B897471CE106AA00A6A92C /* HashNode.cpp */,
+				03B897481CE106AA00A6A92C /* HashNode.hpp */,
 			);
 			name = model;
 			path = src/model;
@@ -182,7 +192,9 @@
 				038266C61CBC2EE5009C2002 /* BinaryTree.cpp in Sources */,
 				0325AFEC1C99DCB60009460F /* ArrayNode.cpp in Sources */,
 				0325AFEF1C99DCB60009460F /* Node.cpp in Sources */,
+				03BDACCC1CDBC553004836FF /* HashTable.cpp in Sources */,
 				0325AFED1C99DCB60009460F /* CTECArray.cpp in Sources */,
+				03B897491CE106AA00A6A92C /* HashNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
