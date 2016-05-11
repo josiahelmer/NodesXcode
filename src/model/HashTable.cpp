@@ -116,6 +116,29 @@ bool HashTable<Type> :: isPrime(int candidateNumber)
         return false;
     }
 }
+    
+    template <class Type>
+    void CtecHashble<Type> :: updateChainedCapacity()
+    {
+        int updatedChainedCapacity = getNextPrime(0);
+        int oldChainedCapacity = chainedCapacity;
+        chainedCpacity = updadChainedCapacity;
+        
+        CTECList<HashNode<Type>> * largerChaineStorag = new CTECList<HashNode<Type>>
+        [updatedChainedCapacity];
+        
+        for(int index = 0; index <oldChainedCapacity; index++)
+        {
+            if(chainedStorage[index] != nullptr0
+               {
+                   CTECList<HashNod<Type>> temp = chainedStorage[index];
+                   for(int innerIndex = 0; innerIndex <temp.getSize(0); innerIndex=)
+                   {
+                       
+                   }
+               }
+        }
+    }
 
 template <class Type>
 void HashTable<Type> :: updateCapacity()
