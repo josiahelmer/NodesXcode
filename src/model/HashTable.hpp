@@ -21,12 +21,21 @@ namespace Data
     private:
         int size;
         int capacity;
-        Type * internalStorage;
+        HashNode<Type> * internalStorage;
+        
+        int tableCapacity;
+        int tableSize;
+        CTECList<HashNode<Type>> * tableStorage;
+        void updateTableCpacity();
+        
         double efficiencyPercentage;
         
         int findPosition(const Type& value);
         int handelCollision(const Type& value);
         void updateCapacity();
+        
+        int getNexPrime();
+        bool isPrime(int candidateNumber);
     public:
         HashTable();
         ~HashTable();

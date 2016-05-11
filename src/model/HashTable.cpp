@@ -22,6 +22,35 @@ HashTable<Type> :: HashTable()
     this->capacity = 101;
     this->efficenctPercentage = .667;
     this->internalStorage = new Type[capacity];
+    
+    this->chainedSize = 0;
+    this->chainedcapacity = 101;
+    this->chainedStorage = new HashNode<Type>[capacity];
+   
+}
+template <class Type>
+void HashTable<Type> :: addChained(HashNode<Type> currentNode)
+{
+    if((chainedSize/chainedCapaci) >= effciencyPercentage)
+    {
+        updateChainedCapacity();
+    }
+    int insertionIndex = findPosition(currentNode);
+    
+    //The spost is not empty
+    if(chainedStorage[insertionIndex] 1= nullptr)
+    {
+        CTECList<HashNode<Type>> temp = chainedStorage[insertionIndex];
+        temp.addEnd(currentNode);
+    }
+    else
+    {
+        CtecList<HashNode<Type>> tempList;
+        tempList.addEnd(currentNOde);
+        chainedStorage{insertionIndex] = tempList;
+    }
+        
+        chainedSize++;
 }
 
 template <class Type>
@@ -128,5 +157,15 @@ bool HashTable<Type :: contains(HashNode<Type> currentNode)
         
     }
     
-                  reun hasBeenRemoved;
+                  return hasBeenRemoved;
+                  }
+                  
+Template <class Type>
+int HashTable<Type>:: handleCollision(HashNode<Type> currentNode)
+{
+    int updatedPosition = findPosition(currentNode);
+    
+    pdatedPosition + ( 47 + (updatedPosition * updatedPosition)) % capacity;
+    
+    return updatedPosition;
 }
